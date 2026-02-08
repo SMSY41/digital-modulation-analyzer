@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Modulation Analyzer</title>
+    <link rel="stylesheet" href="{% static 'analyzer/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Digital Modulation Analyzer</h2>
+
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Generate</button>
+        </form>
+
+        {% if input_plot %}
+            <h3>Input Message Signal</h3>
+            <img src="data:image/png;base64,{{ input_plot }}">
+            <a href="data:image/png;base64,{{ input_plot }}" download="input_signal.png" class="download-btn">Download Input Signal</a>
+        {% endif %}
+
+        {% if modulated_plot %}
+            <h3>{{ form.cleaned_data.modulation }} Modulated Signal</h3>
+            <img src="data:image/png;base64,{{ modulated_plot }}">
+            <a href="data:image/png;base64,{{ modulated_plot }}" download="modulated_signal.png" class="download-btn">Download Modulated Signal</a>
+        {% endif %}
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* ---------- Body & Container ---------- */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5); /* fun gradient */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* semi-transparent white */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- Heading ---------- */
+h2 {
+    color: #2f3640;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+/* ---------- Form ---------- */
+form {
+    background-color: #f7f9fc;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+form:hover {
+    transform: translateY(-3px);
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: #34495e;
+}
+
+/* ---------- Inputs & Selects ---------- */
+form input, form select {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #95a5a6;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+form input:focus, form select:focus {
+    border-color: #44bd32;
+    box-shadow: 0 0 5px #44bd32;
+    outline: none;
+}
+
+/* ---------- Buttons ---------- */
+button {
+    background: linear-gradient(90deg, #44bd32, #4cd137);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #4cd137, #44bd32);
+    transform: scale(1.05);
+}
+
+/* ---------- Plots / Images ---------- */
+img {
+    display: block;
+    margin: 25px auto;
+    border: 3px solid #7f8fa6;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- Fun Small Touch ---------- */
+h3 {
+    text-align: center;
+    color: #2c3e50;
+    text-shadow: 0 1px 1px #fff;
+    margin-top: 30px;
+}
+.download-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #0984e3, #74b9ff);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px auto;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.download-btn:hover {
+    background: linear-gradient(90deg, #74b9ff, #0984e3);
+    transform: scale(1.05);
+}
